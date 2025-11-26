@@ -120,3 +120,5 @@ Thumbs.db
 */.metadata/
 .metadata/*
 /.metadata/
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+/.metadata
