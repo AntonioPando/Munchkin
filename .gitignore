@@ -117,4 +117,5 @@ nbdist/
 .Trashes
 ehthumbs.db
 Thumbs.db
-/.metadata/
+*/.metadata/
+.metadata/*
