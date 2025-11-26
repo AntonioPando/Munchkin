@@ -88,7 +88,7 @@ public class Juego {
 //		ArrayList<Carta> mazoTesoros = new ArrayList<>();
 		
 		// Armas
-		Tesoro martillo = new Tesoro("Martillo", TipoTesoro.ARMA, 4);
+		Tesoro martillo = new Tesoro("Martilloo", TipoTesoro.ARMA, 4);
 		Tesoro espadaLarga = new Tesoro("Espada Larga", TipoTesoro.ARMA, 5);
 		Tesoro hachaDeGuerra = new Tesoro("Hacha de Guerra", TipoTesoro.ARMA, 6);
 		Tesoro daga = new Tesoro("Daga", TipoTesoro.ARMA, 2);
