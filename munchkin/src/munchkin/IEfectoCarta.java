@@ -2,6 +2,6 @@ package munchkin;
 
 public interface IEfectoCarta {
 	
-	public void ejecutar(String Jugador, String Juego);
+	public void ejecutar(Jugador Jugador, Juego Juego);
 
 }

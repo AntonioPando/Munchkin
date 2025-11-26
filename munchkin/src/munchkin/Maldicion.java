@@ -32,16 +32,15 @@ public class Maldicion extends Carta implements IEfectoCarta {
 	
 	@Override
 	
-	public void aplicarEfecto(String jugador, String juego) {
+	public void aplicarEfecto(Jugador jugador, Juego juego) {
 		// TODO
 		ejecutar(jugador, juego);
 	
 	}
 
 	@Override
-	public void ejecutar(String Jugador, String Juego) {
+	public void ejecutar(Jugador Jugador, Juego Juego) {
 		// TODO Auto-generated method stub
 		
 	}
-
 }

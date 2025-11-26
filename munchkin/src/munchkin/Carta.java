@@ -32,6 +32,6 @@ public abstract class Carta {
 	
 	// Método abstracto
 	
-	public abstract void aplicarEfecto (String jugador, String juego);
+	public abstract void aplicarEfecto (Jugador jugador, Juego juego);
 	
 }

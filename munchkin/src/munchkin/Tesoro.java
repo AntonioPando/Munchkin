@@ -35,7 +35,7 @@ public class Tesoro extends Carta {
 	// Métodos
 
 	@Override
-	public void aplicarEfecto(String jugador, String juego) {
+	public void aplicarEfecto(Jugador jugador, Juego juego) {
 		// TODO Auto-generated method stub
 
 	}
