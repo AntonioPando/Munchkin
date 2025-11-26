@@ -1,4 +1,4 @@
-package munchkinProject;
+package munchkin;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -74,7 +74,7 @@ public class Jugador {
 		this.tesoros.add(tesoro);
 	}
 	
-	public void removerTesoroAleatorio() {
+	public void quitarTesoro(Tesoro tesoro) {
 		Random random = new Random();
 		int randomIndice = random.nextInt(this.tesoros.size());
 		this.tesoros.remove(randomIndice);
@@ -89,7 +89,4 @@ public class Jugador {
 	public String toString() {
 		return "Jugador [nombre=" + nombre + ", nivel=" + nivel + ", tesoros=" + tesoros + "]";
 	}	
-	
-	
-
 }

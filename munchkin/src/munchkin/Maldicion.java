@@ -1,4 +1,4 @@
-package munchkinProject;
+package munchkin;
 
 public class Maldicion extends Carta implements IEfectoCarta {
 

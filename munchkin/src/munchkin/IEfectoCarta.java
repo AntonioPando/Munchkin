@@ -1,4 +1,4 @@
-package munchkinProject;
+package munchkin;
 
 public interface IEfectoCarta {
 	

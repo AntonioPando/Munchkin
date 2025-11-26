@@ -1,4 +1,4 @@
-package munchkinProject;
+package munchkin;
 
 
 public class Monstruo extends Carta implements IEfectoCarta {
@@ -46,17 +46,20 @@ public class Monstruo extends Carta implements IEfectoCarta {
 		
 		// Métodos
 
-		public void ejecutar(String jugador, Juego juego) {
+		public void ejecutar(String jugador, String juego) {
 			// TODO: acción
 			
 		}
 		
 		
 		@Override
-		public void aplicarEfecto(String jugador, J juego) {
+		public void aplicarEfecto(String jugador, String juego) {
 			// TODO
 			ejecutar(jugador, juego);
 			
 		}
+
+
+
 
 }

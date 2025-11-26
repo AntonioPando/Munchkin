@@ -1,4 +1,4 @@
-package munchkinProject;
+package munchkin;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,9 +9,9 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		ArrayList<Jugador> jugadores = new ArrayList<Jugador>();
 		
-		System.out.println("********************");
+		System.out.println("********");
 		System.out.println("Bienvenido! Estas en el mejor Munchkin nunca desarrollado.");
-		System.out.println("********************");
+		System.out.println("********");
 
 		System.out.println("\"Cuanto jugadores se van a atrever ?\"");
 		int numeroJugadores = scan.nextInt();
