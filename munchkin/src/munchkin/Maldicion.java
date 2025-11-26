@@ -27,9 +27,11 @@ public class Maldicion extends Carta implements IEfectoCarta {
 	
 	// Constructor 
 	
-	public Maldicion(String nombre, String descripcion) {
+	public Maldicion(String nombre, String tipo, String descripcion, int potencia) {
 		super(nombre);
+		this.tipo = tipo == "QUITANIVELES" ? TipoMaldicion.QUITANIVELES: TipoMaldicion.QUITATESOROS;
 		this.descripcion = descripcion;
+		this.potencia = potencia;
 	}
 
 	// Métodos
