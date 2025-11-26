@@ -55,9 +55,9 @@ public class Jugador {
 	
 	public int getFuerza() {
 		// TODO integrar Juego para llamar a aplicarEfecto
-		int bonus;
+		int bonus = 0;
 		for (Tesoro tesoro:tesoros) {
-			bonus += tesoro.aplicarEfecto(nombre, juego);
+			bonus += tesoro.bonus;
 		}
 		return this.nivel + bonus;
 	}
@@ -74,10 +74,14 @@ public class Jugador {
 		this.tesoros.add(tesoro);
 	}
 	
-	public void quitarTesoro(Tesoro tesoro) {
-		Random random = new Random();
-		int randomIndice = random.nextInt(this.tesoros.size());
-		this.tesoros.remove(randomIndice);
+	public void quitarTesoro() {
+		if (this.tesoros.size() > 0) {
+			Random random = new Random();
+			int randomIndice = random.nextInt(this.tesoros.size());
+			this.tesoros.remove(randomIndice);
+		} else {
+			System.out.println("Ya no tengo ni un tesoro !");
+		}
 	}
 	
 	public boolean haGanado() {

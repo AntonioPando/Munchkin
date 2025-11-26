@@ -4,5 +4,4 @@ public enum TipoTesoro {
 	ARMA, 
 	ARMADURA, 
 	ACCESORIO
-
 }

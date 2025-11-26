@@ -2,9 +2,18 @@ package munchkin;
 
 public class Maldicion extends Carta implements IEfectoCarta {
 
+	
+	// tipo de maldicion
+	enum TipoMaldicion {
+		QUITANIVELES,
+		QUITATESOROS
+	}
+	
 	// Atributos
 	
+	protected TipoMaldicion tipo;
 	protected String descripcion;
+	protected int potencia;
 	
 	// Getter & Setter
 	
@@ -25,22 +34,25 @@ public class Maldicion extends Carta implements IEfectoCarta {
 
 	// Métodos
 	
-	public void ejecutar() {
-		// TODO: acción
-		
-	}
-	
 	@Override
-	
 	public void aplicarEfecto(Jugador jugador, Juego juego) {
 		// TODO
 		ejecutar(jugador, juego);
-	
 	}
 
 	@Override
-	public void ejecutar(Jugador Jugador, Juego Juego) {
-		// TODO Auto-generated method stub
-		
+	public void ejecutar(Jugador jugador, Juego Juego) {
+		if (this.tipo == TipoMaldicion.QUITANIVELES) {
+			jugador.bajarNivel(potencia);
+		} else if (this.tipo == TipoMaldicion.QUITATESOROS) {
+			for (int i = 0; i < this.potencia; i++) {
+				jugador.quitarTesoro();
+			}
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Maldicion [tipo=" + tipo + ", descripcion=" + descripcion + ", potencia=" + potencia + "]";
 	}
 }
