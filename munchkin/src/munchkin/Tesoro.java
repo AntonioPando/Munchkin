@@ -7,7 +7,18 @@ public class Tesoro extends Carta {
 	protected TipoTesoro tipo;
 	protected int bonus;
 
-	// Getter & Setter
+	public Tesoro(String nombre, TipoTesoro tipo, int bonus) {
+		super(nombre);
+		this.tipo = tipo;
+		this.bonus = bonus;
+	}
+	
+	public Tesoro() {
+		super();
+		this.tipo = TipoTesoro.ACCESORIO;
+		this.bonus = 0;
+	}
+
 	public TipoTesoro getTipo() {
 		return tipo;
 	}
@@ -16,27 +27,22 @@ public class Tesoro extends Carta {
 		this.tipo = tipo;
 	}
 
-	public void setBonus(int bonus) {
-		this.bonus = bonus;
-	}
-
 	public int getBonus() {
 		return bonus;
 	}
 
-	// Constructor
-
-	public Tesoro(String nombre, TipoTesoro tipo, int bonus) {
-		super(nombre);
-		this.tipo = tipo;
+	public void setBonus(int bonus) {
 		this.bonus = bonus;
 	}
 
-	// Métodos
-
 	@Override
 	public void aplicarEfecto(Jugador jugador, Juego juego) {
-		// TODO Auto-generated method stub
+		jugador.recibirTesoro(this);
+	}
+	
+	@Override
+	public String toString() {
+		return "Tesoro [tipo=" + tipo + ", bonus=" + bonus + "]";
 	}
 
 }
