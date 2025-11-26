@@ -4,53 +4,35 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Mazo {
-	
-	// Atributos
-	
-	protected ArrayList <Carta> cartas = new ArrayList<>();
-	
-	// Getter & Setter
-	
-	public ArrayList <Carta> getCartas() {
-		return cartas;
+	protected ArrayList<Carta> cartas;
+
+	public Mazo() {
+		cartas = new ArrayList<>();
 	}
 
-	public void setCartas(ArrayList<Carta> cartas) {
-		this.cartas = cartas;
-	}
-
-	
-	// Constructor
-	
-	public Mazo( ArrayList<Carta> cartas) {
-		this.cartas = cartas;
-	}
-	
-	// Métodos
-	
 	public void addCarta(Carta carta) {
-		
-		this.cartas.add(carta);
-		
+		if (carta != null) {
+			cartas.add(carta);
+		}
 	}
-	
-	public void mezclar() {
-		Collections.shuffle(cartas); 
-		
-// método de la clase Collections que 
-//desordena aleatoriamente los elementos de una lista.
-		
-	}
-	
-	public Carta robar() {
-	    if (cartas.isEmpty()) return null; // comprueba si hay cartas
-	    return cartas.remove(0);  // devuelve y elimina a la vez
 
-			
+	public void Mezclar() {
+		Collections.shuffle(cartas);
 	}
-	
+
+	public Carta robar() {
+		if (cartas.isEmpty()) {
+			return null;
+		}
+		return cartas.remove(0);
+	}
+
 	public boolean estaVacio() {
 		return cartas.isEmpty();
+	}
+
+	public int size() {
+		return cartas.size();
 	}
 
 }
