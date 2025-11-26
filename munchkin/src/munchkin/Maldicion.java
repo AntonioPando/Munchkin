@@ -43,13 +43,18 @@ public class Maldicion extends Carta implements IEfectoCarta {
 	}
 
 	@Override
-	public void ejecutar(Jugador jugador, Juego Juego) {
+	public void ejecutar(Jugador jugador, Juego juego) {
 		if (this.tipo == TipoMaldicion.QUITANIVELES) {
 			jugador.bajarNivel(potencia);
+			System.out.println("¡MALDICION!");
+			System.out.println("¡Has perdido "+ potencia + " niveles!");
 		} else if (this.tipo == TipoMaldicion.QUITATESOROS) {
 			for (int i = 0; i < this.potencia; i++) {
-				jugador.quitarTesoro();
+				jugador.removerTesoroAleatorio();
 			}
+			
+			System.out.println("¡MALDICION!");
+			System.out.println("Has perdido el tesoro " + potencia + " tesoros");
 		}
 	}
 
