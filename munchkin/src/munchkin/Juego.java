@@ -267,7 +267,6 @@ public class Juego {
 			System.out.println("Intentemos robar una maravilla por aqui");
 			// define quien robar
 			int indiceJugador = random.nextInt(this.jugadores.size());
-			
 		}
 		
 	}
