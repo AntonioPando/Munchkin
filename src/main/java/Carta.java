@@ -5,8 +5,28 @@
 
 /**
  *
- * @author bigpa
+ * @author AntonioPando
  */
-public class Carta {
+
+public abstract class Carta {
     
+    protected String nombre;
+    
+    public Carta(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public Carta(){
+        this.nombre = "";
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
+    public abstract void aplicarEfecto(Jugador jugador, Juego juego);
 }

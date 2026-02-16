@@ -5,8 +5,12 @@
 
 /**
  *
- * @author bigpa
+ * @author AntonioPando
  */
-public class TipoTesoro {
-    
+
+public enum TipoTesoro {
+    ARMA,
+    ARMADURA,
+    ACCESORIO,
+    INUTIL
 }
