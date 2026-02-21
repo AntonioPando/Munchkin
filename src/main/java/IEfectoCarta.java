@@ -7,6 +7,8 @@
  *
  * @author bigpa
  */
-public class IEfectoCarta {
+public interface IEfectoCarta {
+    
+    public void ejecutar(Jugador jugador, Juego juego);
     
 }
