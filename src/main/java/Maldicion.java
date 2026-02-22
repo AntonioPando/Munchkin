@@ -18,7 +18,7 @@ public class Maldicion extends Carta implements IEfectoCarta{
     protected String descripcion;
     protected int potencia;
 
-    public Maldicion(TipoMaldicion tipo, String descripcion, int potencia, String nombre) {
+    public Maldicion(String nombre, TipoMaldicion tipo, String descripcion, int potencia) {
         super(nombre);
         this.tipo = tipo;
         this.descripcion = descripcion;
