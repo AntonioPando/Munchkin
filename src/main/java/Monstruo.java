@@ -5,7 +5,7 @@
 
 /**
  *
- * @author 
+ * @author AntonioPando
  */
 public class Monstruo extends Carta implements IEfectoCarta {
     

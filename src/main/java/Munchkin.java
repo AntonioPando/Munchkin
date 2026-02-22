@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author bigpa
+ * @author AntonioPando
  */
 public class Munchkin {
 

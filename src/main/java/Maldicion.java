@@ -5,7 +5,7 @@
 
 /**
  *
- * @author bigpa
+ * @author AntonioPando
  */
 public class Maldicion extends Carta implements IEfectoCarta{
     

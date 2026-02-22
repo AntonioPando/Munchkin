@@ -5,7 +5,7 @@
 
 /**
  *
- * @author bigpa
+ * @author AntonioPando
  */
 public interface IEfectoCarta {
     

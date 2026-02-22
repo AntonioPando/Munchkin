@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 /**
  *
- * @author bigpa
+ * @author AntonioPando
  */
 public class Juego {
 
