@@ -7,13 +7,13 @@
  *
  * @author 
  */
-public class Monstruo extends Carta implemetns IEfectoCarta {
+public class Monstruo extends Carta implements IEfectoCarta {
     
     protected int nivel;
     protected int recompensaNiveles;
     protected int recompensaTesoro;
 
-    public Monstruo(int nivel, int recompensaNiveles, int recompensaTesoro, String nombre) {
+    public Monstruo(String nombre, int nivel, int recompensaNiveles, int recompensaTesoro) {
         super(nombre);
         this.nivel = nivel;
         this.recompensaNiveles = recompensaNiveles;
